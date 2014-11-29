@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8"> <!-- especidica idioma para que aparescan los acentos -->
+	<title>HotelApp</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="home">
+	   <div data-role="header"><h1>Hotel App</h1></div>
+	   <div role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true">
+            <li><a href="#nr1">Nueva Reserva</a></li>
+            <li><a href="#hist">Historial</a></li>
+            <li><a href="#priv">Privacidad</a></li>
+           </ul>
+        </div>
+	   <div data-role="footer" data-position="fixed">
+           <span style="font-size: 8pt">&copy; Todos los derechos                      reservados 
+           </span>
+           <a href="#nosotros" data-role="button" data-transition="slideup">Nostros</a>
+           <!-- el # es para indicar que se dirige a un ID -->
+       </div>
+    </div>
+    
+
+    <div data-role="page" id="nosotros">
+            <div data-role="header"><h1>Nosotros</h1>
+            <a href="#" data-role="button" data-rel="back" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-btn-right">Atras</a>
+            </div>
+	   <div role="main" class="ui-content">
+       <p style="text-align: justify;">These settings do not disable the user's ability to zoom the pages, which is nice from an accessibility perspective. There is a minor issue in iOS that doesn't properly set the width when changing orientations with these viewport settings, but this will hopefully be fixed in a future release. You can set other viewport values to disable zooming if required since this is part of your page content, not the library.These settings do not disable the user's ability to zoom the pages, which is nice from an accessibility perspective. There is a minor issue in iOS that doesn't properly set the width when changing orientations with these viewport settings, but this will hopefully be fixed in a future release. You can set other viewport values to disable zooming if required since this is part of your page content, not the library.</p> 
+       </div>
+	</div>
+    
+    
+    
+    <div data-role="page" id="priv">
+            <div data-role="header"><h1>Privacidad</h1>
+            <a href="#" data-role="button" data-rel="back" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-btn-right">Atras</a>
+            </div>
+	   <div role="main" class="ui-content">
+       <p style="text-align: justify;">which is nice from an accessibility perspective. There is a minor issue in iOS that doesn't properly set the width when changing orientations with these viewport settings, but this will hopefully be fixed in a future release. You can set other viewport values to disable zooming if required since this is part of your page content, not the library.</p> 
+       </div>
+	</div>
+    
+    <div data-role="page" id="hist">
+            <div data-role="header"><h1>Historial</h1>
+            <a href="#" data-role="button" data-rel="back" >Atras</a>
+            </div>
+	   <div role="main" class="ui-content">
+       
+       </div>
+	</div>
+    
+    <div data-role="page" id="nr1">
+	   <div data-role="header"><h1>Reservar</h1></div>
+	   <div role="main" class="ui-content">
+        <ul data-role="listview">
+            <li data-role="list-divider">Tipo de habitación</li>
+            <li><a href="#">Sencilla</a></li>
+            <li><a href="#">Doble</a></li>
+            <li><a href="#">Familiar</a></li>
+            
+        </ul>
+       </div>
+	   <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+            <ul>
+                <li><a href="#" class="ui-btn-active">Siguiente</a></li>
+                <li><a href="#" data-rel="back">Cancelar</a></li>
+            </ul>
+            </div><!-- /navbar -->
+       </div>
+    </div>
+    
+    <div data-role="page" id="nr2">
+	   <div data-role="header"><h1>Reservar</h1></div>
+	   <div role="main" class="ui-content">
+        <ul data-role="listview">
+            <li data-role="list-divider">Datos extras</li>
+            <li>
+                Personas:
+                <select id="resP">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </li>
+                
+            <li>
+                Habitaciones:
+                    <select id="resH">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select> 
+            </li>
+            
+            <li>
+                DIas:
+                <select id="resD">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option> 
+                </select>
+            </li>
+            
+        </ul>
+       </div>
+	   <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+            <ul>
+                <li><a href="#" class="ui-btn-active">Enviar</a></li>
+                <li><a href="#" data-rel="back">Cancelar</a></li>
+            </ul>
+            </div><!-- /navbar -->
+       </div>
+    </div>
+    
+    
+    
+    
+</body>
+</html>
