@@ -7,6 +7,7 @@ var capture = {
         {
            image = imgs[i].fullPath; 
             $('#regFoto').attr('rel', image);
+            $('#viewPhoto'.html('<img src="'+ image+'" style="width:100%">'));
         }
     },
     

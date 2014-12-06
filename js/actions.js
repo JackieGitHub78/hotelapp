@@ -20,14 +20,24 @@ init: function()
         var nom = $('#regNom').val();
         var tel = $('#regTel').val();
         var mail = $('#regMail').val();
+        var foto = $('#regFoto').attr('rel');
         
-        if(nom != '' && tel != '' && mail != '')
+        if(nom != '' && tel != '' && mail != '' && foto != '' && foto !=undefined)
             {
-                navigator.notification.alert('correcto', null,'felicidades', 'aceptar');
+            $.ajax(
+                {
+                  type: "POST",
+                  url: "http://carlos.igitsoft.com/apps/test.php",
+                  data: { nom: nom, mail: mail, tel:tel }
+                }
+            )
+                  .done(function( msg ) {
+                    alert( "Data Saved: " + msg );
+                  });
             }
                 else
                     {
-                        alert('todos los campos son requeridos');
+                        navigator.notification.alert('todos los campos son requeridos', null,'Lo sentimos', 'aceptar');
                     }
     }
     
