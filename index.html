@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/actions.js"></script>
 </head>
 
 <body>
@@ -123,6 +124,39 @@
             <ul>
                 <li><a href="#" class="ui-btn-active">Enviar</a></li>
                 <li><a href="#" data-rel="back">Cancelar</a></li>
+            </ul>
+            </div><!-- /navbar -->
+       </div>
+    </div>
+    
+    
+    <div data-role="page" id="reg">
+	   <div data-role="header"><h1>Registro</h1></div>
+	   <div role="main" class="ui-content">
+        <ul data-role="listview">
+            <li data-role="list-divider">Datos Personales</li>
+            <li>
+                <input type="text" id="regNom" placeholder="Nombre">
+            </li>
+                
+            <li>
+                <input type="tel" id="regTel" placeholder="Telefono">
+            </li>
+            
+            <li>
+                <input type="email" id="regMail" placeholder="Correo Electronico">
+            </li>
+            
+            <li><a href="#" id="regFoto">Tomar Foto</a></li>   
+        </ul>
+           
+           <div id="viewPhoto"></div>
+           
+       </div>
+	   <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+            <ul>
+                <li><a href="#" class="ui-btn-active"  id="regSend">Registrar</a></li>
             </ul>
             </div><!-- /navbar -->
        </div>
