@@ -10,6 +10,6 @@ var capture = {
         navigator.notification.alert('Error: '+err.code,null,'Lo sentimos','Aceptar');
     },
     imgCapture: function(){
-        navigator.device.capture.captureImage(capture.imgTomada, capture.imgError, {limit:2});
+        navigator.device.capture.captureImage(capture.imgTomada, capture.imgError);
     }
 }
