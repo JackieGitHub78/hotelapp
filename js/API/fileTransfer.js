@@ -7,6 +7,7 @@ var fileTransfer = {
                     navigator.notification.beep(1);
                 if(btn == 2)
                     navigator.vibrate(1000);
+                    window.location.href="#home";
             }
             navigator.notification.confirm('Se ha registrado correctamente',acciones,'¡Felicidades!',['Sonido','Vibrar','Cancelar']);
         }else{
