@@ -5,8 +5,7 @@ var fn = {
     init: function(){
         $('#regSend').click(fn.enviarRegistro);
         $('#regFoto').click(capture.imgCapture);
-        var x = false;
-        if(!x)
+        if(!storage.estaRegistrado())
             window.location.href = '#reg';
     },
     enviarRegistro: function(){

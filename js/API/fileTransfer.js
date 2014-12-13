@@ -7,7 +7,8 @@ var fileTransfer = {
                     navigator.notification.beep(1);
                 if(btn == 2)
                     navigator.vibrate(1000);
-                    window.location.href="#home";
+                window.location.href="#home";
+                storage.salvarRegistro();
             }
             navigator.notification.confirm('Se ha registrado correctamente',acciones,'¡Felicidades!',['Sonido','Vibrar','Cancelar']);
         }else{
@@ -19,7 +20,6 @@ var fileTransfer = {
         navigator.notification.alert('Error: ' + err.code, null, '¡Lo sentimos!','Aceptar');
     },
     subirFoto: function(){
-        alert($('#regFoto').attr('rel'));
         var opciones = new FileUploadOptions();
         var ft = new FileTransfer();
         opciones.fileKey = 'foto';
